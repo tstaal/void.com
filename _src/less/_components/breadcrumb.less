@@ -1,0 +1,25 @@
+.breadcrumbs {
+    margin-top: @spacing-xl;
+    margin-bottom: @spacing-xl;
+
+    .breadcrumb {
+        display: inline-block;
+        &.disabled {
+            display: none;
+        }
+    }
+    
+    &__link {
+        text-transform: uppercase;
+        transition: all .3s ease;
+        opacity: .25;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    span {
+        opacity: .25;
+    }
+}

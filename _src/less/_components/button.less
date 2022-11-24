@@ -1,0 +1,27 @@
+.btn {
+    border: none;
+    border-radius: 0;
+    background-color: @w;
+    font-family: Poppins, sans-serif;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s all ease;
+    &:hover {
+        transform: scale(.95);
+    }
+
+    &--br {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__img {
+        width: 20px;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 2px;
+    }
+}

@@ -1,0 +1,30 @@
+.payments {
+    width: 100%;
+    .payment {
+        input {
+            display: none;
+        }
+        label {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: @w;
+            margin: @spacing-m 0;
+            padding: @spacing-xs @spacing-s;
+            cursor: pointer;
+            .checkmark {
+                display: none;
+            }
+            img {
+                max-height: 30px;
+            }
+        }
+        input[type="radio"]:checked {
+            & ~ label {
+                .checkmark {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('../../partials/head.html', {
+        "title" : "VOID Festival"
+    })
+    <body class="body">
+      @@include('../../partials/menu.html')
+      <main class="min-vh">
+        @@include('../../partials/navigation.html')
+        @@include('../../partials/header.html', {
+          "half" : "header__half"
+        })
+        <div class="breadcrumbs outer">
+          <a class="breadcrumbs__link" href="./">Home</a>
+          <span> / </span>
+          <a class="breadcrumbs__link" href="impressum/">Impressum</a>
+        </div>
+        <div class="outer mt">
+          <h2>Impressum</h2>
+          <div class="container container--2col">
+            <div>
+              <p><b>Angaben gem&auml;&szlig; &sect; 5 TMG</b></p>
+              <p class="mb">VOID. GmbH<br />
+              Aufm Feld 2<br />
+              21455 Feldburg</p>
+
+              <p class="mb"><strong>Vertreten durch:</strong><br />
+              Herr von VOID</p>
+
+              <p><strong>Vorsitzender des Aufsichtsrats:</strong><br />
+              VOID-ratsvorsitz M&uuml;ller</p>
+
+              <p><b>Kontakt</b></p>
+              <p class="mb">Telefon: 0163 173 7743<br />
+              E-Mail: info@void.com</p>
+
+              <p><b>Umsatzsteuer-ID</b></p>
+              <p class="mb">Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
+              DE999999999</p>
+
+              <p><b>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</b></p>
+              <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <div></div>
+          </div>
+        </div>
+      </main>
+        @@include('../../partials/footer.html')
+    </body>
+</html>

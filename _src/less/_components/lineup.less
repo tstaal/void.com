@@ -1,0 +1,64 @@
+.lineup {
+    background-size: cover;
+    background-position: center;
+
+    &--rap {
+        background-image: url(/_src/img/rap_lineup.jpg);
+    }
+
+    &--techno {
+        background-image: url(/_src/img/techno_lineup.jpg);
+    }
+
+    &--selection {
+        background-image: url(/_src/img/lineup.jpg);
+        display: flex;
+        align-items: center;
+        h2 {
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .titlewrap:hover {
+            h2 {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .contentwrap {
+        padding-top: 80px;
+        position: relative;
+
+        .titlewrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__day {
+        display: flex;
+        gap: @spacing-s;
+        margin: @spacing-xl 0;
+
+        @media @m400 {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        position: relative;
+        margin-left: 76px;
+        &__image {
+            height: 250px;
+            @media @m700 {
+                display: none;
+            }
+        }
+        @media @m400 {
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+}

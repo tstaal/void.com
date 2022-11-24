@@ -1,0 +1,43 @@
+
+.footer {
+    position: relative;
+    margin-top: @spacing-l;
+    background-color: @b;
+    
+    .decoration__bar {
+        width: 100%;
+        height: @spacing-l;
+        top: (-@spacing-l);
+        left: 0;
+    }
+    
+    .footerwrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: @spacing-xl 0;
+
+        div {
+            max-width: 250px;
+            padding: 25px;
+
+            @media @m900 {
+                max-width: none;
+                width: 50%;
+            }
+
+            @media @m400 {
+                width: 100%;
+            }
+
+            p, a  {
+                text-decoration: none;
+                font-family: Poppins, sans-serif;
+            }
+
+            .footerlogo {
+                max-width: 150px;
+            }
+        }
+    }
+}

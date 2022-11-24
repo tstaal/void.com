@@ -1,0 +1,95 @@
+.header {
+    height: 100vh;
+    position: relative;
+
+    &__half {
+        height: 50vh;
+
+        .header__text {
+            bottom: 75px;
+        }
+    }
+
+    &>img {
+        z-index: -1;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: @b;
+        mix-blend-mode: multiply;
+        opacity: .8;
+    }
+
+    &__text {
+        bottom: 300px;
+        left: 150px;
+        position: absolute;
+
+        span, p {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        @media @m700 {
+            h2 {
+                font-size: 36px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        @media @m400 {
+            h2 {
+                font-size: 32px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        .header__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            * {
+                max-height: 40px;
+            }
+        }
+
+        @media @m400 {
+            left: (@spacing-xl + @spacing-s);
+        }
+    }
+
+    .decoration__img {
+        display: inline-block;
+        height: 40px;
+        width: auto;
+    }
+
+    .decoration__bar {
+        bottom: 0;
+        height: 100%;
+        width: 28px;
+        position: absolute;
+        left: (-28px - @spacing-xl);
+        
+        @media @m400 {
+            left: (-28px - @spacing-s);
+        }
+    }
+}

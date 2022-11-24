@@ -1,0 +1,19 @@
+form  {
+    margin: @spacing-m 0;
+    .formrow {
+        display: flex;
+        gap: @spacing-m;
+        margin-bottom: @spacing-m;
+
+        @media @m700 {
+            flex-direction: column;
+        }
+        
+        input {
+            font-family: Poppins, sans-serif;
+            padding: @spacing-xs @spacing-s;
+            border: none;
+            width: 100%;
+        }
+    }
+}

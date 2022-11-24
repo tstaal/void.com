@@ -1,0 +1,117 @@
+.tiles {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    @media @m900 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .image__wrap {
+        display: grid;
+        place-items: center;
+        position: relative;
+        height: 50vh;
+
+        &:hover {
+            .overlay {
+                background-color: @b;
+                &__image {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    
+        & > * {
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+            z-index: 99;
+        }
+    
+        & > img {
+            z-index: -1;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            mix-blend-mode: multiply;
+            z-index: 1;
+            opacity: .8 ;
+            transition: all .3s ease;
+
+            &--blue {
+                background-color: @blue;
+            }
+
+            &--red {
+                background-color: @red;
+            }
+
+            &--dark {
+                background-color: @b;
+                opacity: 0.6;
+            }   
+
+            &__image {
+                max-height: 200px;
+                max-width: 200px;
+                padding: 15px;
+                transition: all .3s ease;
+
+                @media @m700 {
+                    transform: scale(.6);
+                }
+            }
+
+            &__text {
+                text-align: center;
+            }
+        }
+    }
+
+    &__text {
+        color: white;
+        position: absolute;
+
+        &__divider {
+            height: 6px;
+            width: 100%;
+            background-color: @w;
+            margin-top: @spacing-xl;
+        }
+        
+        &__lower {
+            margin-top: @spacing-xl;
+        }
+
+        @media @m400 {
+            margin-left: 100px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            &__lower {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .bg__img {
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        filter: grayscale(1);
+    }
+    .bg__img {
+        height: 50vh;
+
+        @media @m400 {
+            &__artist {
+                object-position: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.navigation {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background: @b-fade;
+
+    &__wrap {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px;
+        inset: 0 0 auto 0;
+    }
+
+    .logo {
+        img {
+            height: 80px;
+            width: auto;
+        }
+    }
+    .navbar {
+        .burger {
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .bar {
+                display: block;
+                background-color: white;
+                height: 4px;
+                width: 40px;
+                border-radius: 10px;
+                transition: .3s ease;
+
+                &:nth-of-type(2) {
+                    width: 30px;
+                    margin-left: auto;
+                }
+            }
+
+            &.active {
+                .bar {
+                    &:first-child {
+                        transform: rotate(45deg) translate(8px, 8px);
+                    }
+                    &:nth-child(2) {
+                        transform: rotate(45deg)translate(-4px, 2px);
+                    }
+                    &:last-child {
+                        transform: rotate(-45deg) translate(10px, -10px);
+                    }
+                }
+            }
+        }
+    }
+}
