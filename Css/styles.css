@@ -664,7 +664,7 @@ form .formrow input {
   font-family: Poppins, sans-serif;
   text-decoration: none;
 }
-.menu .menuwrap .navlist li:hover {
+.menu .menuwrap .navlist li:hover a {
   text-decoration: underline;
 }
 .menu .menuwrap .menufooter {
