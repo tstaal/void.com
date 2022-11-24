@@ -544,13 +544,13 @@ form .formrow input {
   background-position: center;
 }
 .lineup--rap {
-  background-image: url(/_src/img/rap_lineup.jpg);
+  background-image: url(../_src/img/rap_lineup.jpg);
 }
 .lineup--techno {
-  background-image: url(/_src/img/techno_lineup.jpg);
+  background-image: url(../_src/img/techno_lineup.jpg);
 }
 .lineup--selection {
-  background-image: url(/_src/img/lineup.jpg);
+  background-image: url(../_src/img/lineup.jpg);
   display: flex;
   align-items: center;
 }
