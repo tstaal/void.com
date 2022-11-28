@@ -1,0 +1,10 @@
+Die Website void.com wurde Desktop-first entwickelt.
+Sie ist auf allen konventionellen Browsern getestet, aber für Google Chrome optimiert.
+
+Der Quellcode wurde in Visual Studio Code geschrieben mit Hilfe der Extension Gulp, die LESS Code in CSS kompiliert.
+Schlussendlich wurden nur die fertige styles.css und styles.min.css benötigt.
+
+Für den Shop-Bereich "Einkaufswagen" wurde ein externes Script genutzt, alle restlichen Stylings und Scripte sind selbst geschrieben.
+Es wird kein externes Framework genutzt.
+
+Zur Versionierung wurde GitHub verwendet.
